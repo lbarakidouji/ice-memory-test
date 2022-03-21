@@ -1,0 +1,74 @@
+/**
+ * 这里放全局的样式
+ * 1. reset
+ * 2. 全局样式
+ * @file 全局样式
+ * @author vincent lau
+ * @createdAt 2018/1/31 - 上午10:19
+ */
+@import "./vars";
+@import "./reset";
+
+//  字体文件样式
+@import './fonts/index.less';
+
+.none {
+  display: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20*@u;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2*@u;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background: @htmlbodyBg;
+
+  body {
+    background-color: @htmlbodyBg;
+    background-repeat: no-repeat;
+    background-position: 100%, 100%;
+    height: 100%;
+
+    #app {
+      height: inherit;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(216, 216, 216);
+  }
+
+  /*定义滚动条轨道*/
+  ::-webkit-scrollbar-track {
+    background-color: rgb(216, 216, 216);
+  }
+
+  /*定义滑块*/
+  ::-webkit-scrollbar-thumb {
+    background-color: @themeColor;
+    border-radius: 4px;
+  }
+}

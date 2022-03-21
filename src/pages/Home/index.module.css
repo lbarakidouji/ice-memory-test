@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: red;
+
+  /* 样式热更新好像也有点问题？ */
+}
